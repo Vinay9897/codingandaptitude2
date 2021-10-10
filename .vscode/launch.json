@@ -1,0 +1,126 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinaryUsingRecursion",
+            "request": "launch",
+            "mainClass": "BinaryUsingRecursion",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Destination",
+            "request": "launch",
+            "mainClass": "Destination",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaxMin",
+            "request": "launch",
+            "mainClass": "MaxMin",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch P",
+            "request": "launch",
+            "mainClass": "P",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch PalindromeUsingRecursion",
+            "request": "launch",
+            "mainClass": "PalindromeUsingRecursion",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program1",
+            "request": "launch",
+            "mainClass": "Program1",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program10",
+            "request": "launch",
+            "mainClass": "Program10",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program2",
+            "request": "launch",
+            "mainClass": "Program2",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program3",
+            "request": "launch",
+            "mainClass": "Program3",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program4",
+            "request": "launch",
+            "mainClass": "Program4",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program5",
+            "request": "launch",
+            "mainClass": "Program5",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program6",
+            "request": "launch",
+            "mainClass": "Program6",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program7",
+            "request": "launch",
+            "mainClass": "Program7",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program9",
+            "request": "launch",
+            "mainClass": "Program9",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch SinglyLinkedList",
+            "request": "launch",
+            "mainClass": "SinglyLinkedList",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "codingandaptitude2_726f1f7d"
+        }
+    ]
+}
