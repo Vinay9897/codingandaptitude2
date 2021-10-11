@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BlockSwapAlgo",
+            "request": "launch",
+            "mainClass": "BlockSwapAlgo",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Practice",
+            "request": "launch",
+            "mainClass": "Practice",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
