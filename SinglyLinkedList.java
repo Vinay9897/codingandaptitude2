@@ -30,6 +30,7 @@ public class SinglyLinkedList {
         third.next = four;
         sll.addNodeAtFirst(1);
         sll.insertLast(10);
+        // sll.deleteAtPosition(3);
         sll.deleteAtFirst();
         sll.insert(3, 7);
         sll.deleteAtLast();
@@ -156,7 +157,7 @@ public class SinglyLinkedList {
         }
     }
 
-    // Insert Node at position
+    // Insert Node at any given position --- Very Important
 
     public void insert(int position, int value) {
         ListNode node = new ListNode(value);
@@ -173,6 +174,24 @@ public class SinglyLinkedList {
             ListNode current = previous.next;
             previous.next = node;
             node.next = current;
+        }
+    }
+
+    // Delete a given node at any position
+
+    public void deleteAtPosition(int position) {
+        if (position == 1) {
+            head = head.next;
+        } else {
+            ListNode previous = head;
+            int count = 1;
+            while (count < position - 1) {
+                previous = previous.next;
+                count++;
+
+            }
+            ListNode current = previous.next;
+            previous.next = current.next;
         }
     }
 }
