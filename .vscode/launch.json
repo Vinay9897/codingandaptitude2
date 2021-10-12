@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RemoveDuplicateElement",
+            "request": "launch",
+            "mainClass": "RemoveDuplicateElement",
+            "projectName": "codingandaptitude2_726f1f7d"
+        },
+        {
+            "type": "java",
             "name": "Launch BlockSwapAlgo",
             "request": "launch",
             "mainClass": "BlockSwapAlgo",
