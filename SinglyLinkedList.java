@@ -30,6 +30,7 @@ public class SinglyLinkedList {
         third.next = four;
         sll.addNodeAtFirst(1);
         sll.insertLast(10);
+        sll.insertLast(10);
         // sll.deleteAtPosition(3);
         sll.deleteAtFirst();
         sll.insert(3, 7);
@@ -39,6 +40,14 @@ public class SinglyLinkedList {
         // sll.insertAtLastUsingTail(6);
 
         sll.traverse();
+
+        // find the middle Node
+        ListNode middleNode = sll.getMiddleNode();
+        System.out.println(middleNode.data);
+
+        // to remove the duplicate node
+        sll.removeDuplicate();
+
         System.out.println("Length is --" + sll.length());
 
     }
@@ -192,6 +201,61 @@ public class SinglyLinkedList {
             }
             ListNode current = previous.next;
             previous.next = current.next;
+        }
+    }
+
+    /// To find the middle Node of the linked list
+    public ListNode getMiddleNode() {
+        if (head == null) {
+            return null;
+        }
+        ListNode slowPtr = head;
+        ListNode fastPtr = head;
+        while (fastPtr != null && fastPtr.next != null) {
+            slowPtr = slowPtr.next;
+            fastPtr = fastPtr.next.next;
+        }
+        return slowPtr;
+    }
+
+    // to find the Nth Node from the End
+
+    public ListNode getNthNodeFromEnd(int n) {
+        if (head == null) {
+            return null;
+        }
+        if (n <= 0) {
+            throw new IllegalArgumentException("Invalid value : n " + n);
+        }
+        ListNode mainPtr = head;
+        ListNode refPtr = head;
+        int count = 0;
+        while (count < n) {
+            if (refPtr == null) {
+                throw new IllegalArgumentException(n + "is greater than the number of nodes in list");
+            }
+            refPtr = refPtr.next;
+            count++;
+        }
+        while (refPtr != null) {
+            refPtr = refPtr.next;
+            mainPtr = mainPtr.next;
+        }
+        return mainPtr;
+    }
+
+    // To remove duplicate node from the sorted Linkedlist
+    public void removeDuplicate() {
+        if (head == null) {
+            return;
+        }
+        ListNode current = head;
+        while (current != null && current.next != null) {
+            if (current.data == current.next.data) {
+                current.next = current.next.next;
+            } else {
+                current = current.next;
+            }
         }
     }
 }
