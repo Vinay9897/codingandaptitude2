@@ -2,10 +2,10 @@ public class SinglyLinkedList {
     private ListNode head = null;
     private ListNode tail = null;
 
-    public SinglyLinkedList() {
-        this.head = null;
-        this.tail = null;
-    }
+    // public SinglyLinkedList() {
+    // this.head = null;
+    // this.tail = null;
+    // }
 
     private static class ListNode {
         private int data;
